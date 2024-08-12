@@ -90,13 +90,13 @@ export default function Game({
   };
 
   return (
-    <section className="flex flex-col items-center justify-center gap-4 p-4">
+    <section className="flex w-full flex-col items-center justify-center gap-4 p-4">
       {gameStatus === GameStatus.ACTIVE ? (
         <>
           <ScoreIsland score={score} highscore={highscore} />
-          <GameTitle />
+          <GameTitle className="hidden md:block" />
 
-          <div className="grid w-full grid-cols-3 gap-4">
+          <div className="mt-4 grid h-full w-full grid-cols-1 gap-4 md:grid-cols-3">
             <Slide question={questionsState[questionIndex]} />
             <DecisionButton
               title={game.question}
