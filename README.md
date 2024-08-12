@@ -44,3 +44,9 @@ Make sure you have the following installed:
 
 3. **Link the Vercel Postgres database:**
    Follow the instructions in the [Vercel Postgres documentation](https://vercel.com/docs/storage/vercel-postgres/quickstart) to link your Vercel Postgres database to your project.
+
+4. **Run the project locally:**
+
+   ```bash
+   npm run dev
+   ```
