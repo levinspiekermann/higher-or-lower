@@ -9,7 +9,14 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Higher or Lower - Game',
-  description: 'Higher or Lower - Game by @levinspiekermann'
+  description: 'Higher or Lower - Game by @levinspiekermann',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://higher-or-lower-six.vercel.app/',
+    title: 'Higher or Lower - Game',
+    description: 'Higher or Lower - Game by @levinspiekermann'
+  }
 };
 
 export default function RootLayout({
