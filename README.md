@@ -10,6 +10,7 @@ This is a **Higher or Lower** game where players test their knowledge by guessin
 - Highscore tracking
 - Responsive design optimized for both desktop and mobile
 - Extendable with unlimited questions and games
+- Currently country population and spotify monthly listeners data
 
 ## Demo
 
