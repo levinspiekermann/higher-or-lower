@@ -1,6 +1,6 @@
 import { cn, formatNumberWithCommas } from '@/lib/utils';
 import { Question } from '@/types/types';
-import Image from 'next/image';
+import BlurImage from './blur-image';
 
 export default function Slide({
   question,
@@ -17,12 +17,15 @@ export default function Slide({
       )}
     >
       <div className="relative min-h-[200px] w-full overflow-hidden rounded-lg md:min-h-[300px] lg:min-h-[400px]">
-        <Image
+        {/* <Image
           src={question.thumbnail}
           alt={question.name}
           fill
           className="absolute inset-0 h-full w-full object-cover"
-        />
+        /> */}
+
+        <BlurImage source={question.thumbnail} alt={question.name} />
+
         <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent opacity-20 blur-lg" />
       </div>
       <div className="mt-4 flex flex-col items-center justify-between md:mt-6 lg:mt-8">
