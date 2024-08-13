@@ -15,7 +15,16 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://higher-or-lower-six.vercel.app/',
     title: 'Higher or Lower - Game',
-    description: 'Higher or Lower - Game by @levinspiekermann'
+    description: 'Higher or Lower - Game by @levinspiekermann',
+    siteName: 'Higher or Lower - Game',
+    images: [
+      {
+        url: 'https://higher-or-lower-six.vercel.app/higher-or-lower-github-banner.png',
+        width: 1200,
+        height: 630,
+        alt: 'Higher or Lower - Game'
+      }
+    ]
   }
 };
 
