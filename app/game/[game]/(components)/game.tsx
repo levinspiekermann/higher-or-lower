@@ -96,8 +96,11 @@ export default function Game({
           <ScoreIsland score={score} highscore={highscore} />
           <GameTitle className="hidden md:block" />
 
-          <div className="mt-4 grid h-full w-full grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="mt-4 grid w-full grid-cols-1 gap-4 md:grid-cols-3">
+            {/* <div className="flex h-full flex-col justify-between"> */}
             <Slide question={questionsState[questionIndex]} />
+            {/* </div> */}
+            {/* <div className="flex flex-col justify-center"> */}
             <DecisionButton
               title={game.question}
               currentQuestions={[
@@ -106,7 +109,10 @@ export default function Game({
               ]}
               onAnswer={handleAnswer}
             />
+            {/* </div> */}
+            {/* <div className="flex h-full flex-col justify-between"> */}
             <Slide question={questionsState[questionIndex + 1]} />
+            {/* </div> */}
           </div>
         </>
       ) : (
