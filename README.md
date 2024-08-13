@@ -33,8 +33,8 @@ Make sure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/levinspiekermann/higher-lower-game.git
-   cd higher-lower-game
+   git clone https://github.com/levinspiekermann/higher-or-lower.git
+   cd higher-or-lower
    ```
 
 2. **Install dependencies:**
